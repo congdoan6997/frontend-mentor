@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "bunx tailwindcss -i ./testimonials-grid-section-main/input.css -o ./testimonials-grid-section-main/output.css --watch"
+    "build": "bunx tailwindcss -i ./contact-form-main/input.css -o ./contact-form-main/output.css --watch"
   },
   "dependencies": {},
   "devDependencies": {

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <link rel="stylesheet" href="./output.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body
+    class="min-h-screen bg-primary-green-lighter flex items-center justify-center"
+  >
+    <form
+      class="flex flex-col gap-4 bg-neutral-white p-8 desktop:min-w-[700px] rounded-2xl shadow-xl"
+      novalidate
+    >
+      <h1 class="text-2xl font-bold">Contact Us</h1>
+      <div class="flex desktop:flex-row mobile:flex-col gap-4">
+        <label>
+          <span for="firstname" class="text-sm">First Name *</span>
+          <input
+            type="text"
+            id="firstname"
+            required
+            class="border border-neutral-grey-medium rounded-md p-2 my-2 w-full invalid:outline-none invalid:border-primary-red focus:outline-none focus:border-primary-green-medium focus:ring-1 focus:ring-primary-green-medium focus:invalid:border-primary-red focus:invalid:ring-primary-red peer/firstname"
+          />
+          <span
+            class="text-sm text-primary-red invisible peer-invalid/firstname:visible"
+            >This field is required</span
+          >
+        </label>
+        <label>
+          <span for="lastname" class="text-sm">Last Name *</span>
+          <input
+            type="text"
+            id="lastname"
+            required
+            class="border border-neutral-grey-medium rounded-md p-2 my-2 w-full invalid:outline-none invalid:border-primary-red focus:outline-none focus:border-primary-green-medium focus:ring-1 focus:ring-primary-green-medium focus:invalid:border-primary-red focus:invalid:ring-primary-red peer/lastname"
+          />
+          <span
+            class="text-sm text-primary-red invisible peer-invalid/lastname:visible"
+            >This field is required</span
+          >
+        </label>
+      </div>
+      <label>
+        <span for="email" class="text-sm">Email Address *</span>
+        <input
+          type="email"
+          id="email"
+          required
+          class="border border-neutral-grey-medium rounded-md p-2 my-2 w-full invalid:outline-none invalid:border-primary-red focus:outline-none focus:border-primary-green-medium focus:ring-1 focus:ring-primary-green-medium focus:invalid:border-primary-red focus:invalid:ring-primary-red peer/email"
+        />
+        <span
+          class="text-sm text-primary-red invisible peer-invalid/email:visible"
+          >Please enter a valid email address</span
+        >
+      </label>
+      <div class="flex flex-col gap-2 w-full">
+        <p class="text-sm">Query Type *</p>
+        <div class="flex gap-2 flex-wrap w-full group">
+          <label
+            class="flex items-center gap-4 px-4 border border-neutral-grey-medium rounded-md p-2 flex-1 has-[:checked]:border-primary-green-medium has-[:checked]:bg-primary-green-lighter has-[:checked]:accent-primary-green-medium hover:has-[:checked]:accent-primary-green-medium"
+          >
+            <input
+              type="radio"
+              id="type1"
+              name="type"
+              class="size-4"
+              required
+            />
+            <span class="flex-1">General Enquiry</span>
+          </label>
+          <label
+            class="flex items-center gap-4 px-4 border border-neutral-grey-medium rounded-md p-2 flex-1 has-[:checked]:border-primary-green-medium has-[:checked]:bg-primary-green-lighter has-[:checked]:accent-primary-green-medium hover:has-[:checked]:accent-primary-green-medium"
+          >
+            <input
+              type="radio"
+              id="type2"
+              name="type"
+              class="size-4"
+              required
+            />
+            <span class="flex-1">Support Request</span>
+          </label>
+          <span
+            class="text-sm text-primary-red w-full invisible peer-has-[:checked]:visible"
+            >Please select a query type</span
+          >
+        </div>
+      </div>
+      <label>
+        <span for="message" class="text-sm">Message *</span>
+        <textarea
+          id="message"
+          rows="4"
+          required
+          class="border border-neutral-grey-medium rounded-md p-2 my-2 w-full invalid:outline-none invalid:border-primary-red focus:outline-none focus:border-primary-green-medium focus:ring-1 focus:ring-primary-green-medium focus:invalid:border-primary-red focus:invalid:ring-primary-red peer/message"
+        ></textarea>
+        <span
+          class="text-sm text-primary-red invisible peer-invalid/message:visible"
+          >This field is required</span
+        >
+      </label>
+      <label>
+        <div class="flex flex-wrap gap-4 items-center">
+          <input
+            type="checkbox"
+            name="consent"
+            id="consent"
+            class="size-4 peer/consent"
+            required
+          />
+          <span class="w-[90%]">I consent to being contacted by team *</span>
+          <span
+            class="text-sm text-primary-red invisible peer-invalid/consent:visible"
+            >To submit this form, please consent to being contacted</span
+          >
+        </div>
+      </label>
+      <button
+        type="submit"
+        class="w-full bg-primary-green-medium text-neutral-white p-3 text-sm rounded-md"
+      >
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
