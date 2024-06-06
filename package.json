@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "bunx tailwindcss -i ./testimonials-grid-section-main/input.css -o ./testimonials-grid-section-main/output.css --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
