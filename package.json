@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "bunx tailwindcss -i ./nft-preview-card-component-main/input.css -o ./nft-preview-card-component-main/output.css --watch"
+    "build": "bunx tailwindcss -i ./3-column-preview-card-component-main/input.css -o ./3-column-preview-card-component-main/output.css --watch"
   },
   "dependencies": {},
   "devDependencies": {
