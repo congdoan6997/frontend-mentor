@@ -1,23 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./stats-preview-card-component-main/*.{html,js}"],
+  content: ["./order-summary-component-main/*.{html,js}"],
   theme: {
     extend: {},
     colors: {
       primary: {
-        "main-background": "hsl(233, 47%, 7%)",
-        "card-background": "hsl(244, 38%, 16%)",
-        accent: "hsl(277, 64%, 61%)",
+        "pale-blue": "hsl(225, 100%, 94%)",
+        "bright-blue": "hsl(245, 75%, 52%)",
       },
       neutral: {
-        "main-heading": "hsl(0, 0%, 100%)",
-        "main-paragraph": "hsla(0, 0%, 100%, 0.75)",
-        "stat-headings": "hsla(0, 0%, 100%, 0.6)",
+        "very-pale-blue": "hsl(225, 100%, 98%)",
+        "desaturated-blue": "hsl(224, 23%, 55%)",
+        "dark-blue": "hsl(223, 47%, 23%)",
       },
     },
     fontFamily: {
-      inter: ["Inter", "sans-serif"],
-      "lexend-deca": ["Lexend Deca", "sans-serif"],
+      "red-hat-display": ["Red Hat Display", "sans-serif"],
     },
   },
   plugins: [],
