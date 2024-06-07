@@ -1,17 +1,22 @@
 /** @type {import('tailwindcss').Config} */
+import daisyui from "daisyui";
 module.exports = {
-  content: ["./article-preview-component-master/*.{html,js}"],
+  content: ["./notifications-page-main/*.{html,js}"],
   theme: {
     extend: {},
     colors: {
-      "very-dark-grayish-blue": "hsl(217 19% 35%)",
-      "desaturated-dark-blue": "hsl(214, 17%, 51%)",
-      "grayish-blue": "hsl(212, 23%, 69%)",
-      "very-grayish-blue": "hsl(210, 46%, 95%)",
+      red: "hsl(1, 90%, 64%)",
+      blue: "hsl(219, 85%, 26%)",
+      white: "hsl(0, 0%, 100%)",
+      "very-light-grayish-blue": "hsl(210, 60%, 98%)",
+      "light-grayish-blue": "hsl(211, 68%, 94%)",
+      "dark-grayish-blue": "hsl(219, 14%, 63%)",
+      "very-dark-grayish-blue": "hsl(219, 12%, 42%)",
+      "very-dark-blue": "hsl(224, 21%, 14%)",
     },
     fontFamily: {
-      manrope: ["Manrope", "sans-serif"],
+      "plus-jakarta-sans": ["Plus Jakarta Sans", "sans-serif"],
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [daisyui],
 };

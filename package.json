@@ -4,6 +4,6 @@
     "tailwindcss": "^3.4.4"
   },
   "scripts": {
-    "build": "bunx tailwindcss -i ./input.css -o ./article-preview-component-master/output.css --watch"
+    "build": "bunx tailwindcss -i ./input.css -o ./notifications-page-main/output.css --watch"
   }
 }
