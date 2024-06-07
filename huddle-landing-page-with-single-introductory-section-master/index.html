@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body
+    class="bg-primary-violet bg-[url(./images/bg-mobile.svg)] md:bg-[url(./images/bg-desktop.svg)] bg-cover min-h-screen"
+  >
+    <div class="flex flex-col md:grid md:grid-cols-2 p-8 gap-12 h-full w-full">
+      <div class="space-y-8 md:space-y-32">
+        <img src="./images/logo.svg" alt="" />
+        <img src="./images/illustration-mockups.svg" alt="" />
+      </div>
+      <div
+        class="flex flex-col justify-center items-center md:items-start gap-8"
+      >
+        <h3
+          class="font-poppins text-4xl text-[#fff] md:pr-10 text-center md:text-start"
+        >
+          Build The Community Your Fans Will Love
+        </h3>
+        <p
+          class="text-[#fff] font-open-sans px-10 md:pl-0 md:pr-10 text-center md:text-start"
+        >
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <button
+          class="bg-[#fff] text-primary-violet hover:text-[#fff] hover:bg-primary-soft-magenta py-2 w-40 rounded-full shadow-2xl"
+        >
+          Register
+        </button>
+      </div>
+      <div>
+        <img src="./images/icon-facebook.svg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

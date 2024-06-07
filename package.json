@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "bunx tailwindcss -i ./input.css -o ./order-summary-component-main/output.css --watch"
+    "build": "bunx tailwindcss -i ./input.css -o ./huddle-landing-page-with-single-introductory-section-master/output.css --watch"
   },
   "dependencies": {},
   "devDependencies": {
