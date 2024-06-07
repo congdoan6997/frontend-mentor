@@ -1,9 +1,9 @@
 {
-  "scripts": {
-    "build": "bunx tailwindcss -i ./input.css -o ./huddle-landing-page-with-single-introductory-section-master/output.css --watch"
-  },
-  "dependencies": {},
   "devDependencies": {
+    "daisyui": "^4.12.2",
     "tailwindcss": "^3.4.4"
+  },
+  "scripts": {
+    "build": "bunx tailwindcss -i ./input.css -o ./article-preview-component-master/output.css --watch"
   }
 }

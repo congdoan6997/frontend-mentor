@@ -1,20 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./huddle-landing-page-with-single-introductory-section-master/*.{html,js}",
-  ],
+  content: ["./article-preview-component-master/*.{html,js}"],
   theme: {
     extend: {},
     colors: {
-      primary: {
-        violet: "hsl(257, 40%, 49%)",
-        "soft-magenta": "hsl(300, 69%, 71%)",
-      },
+      "very-dark-grayish-blue": "hsl(217 19% 35%)",
+      "desaturated-dark-blue": "hsl(214, 17%, 51%)",
+      "grayish-blue": "hsl(212, 23%, 69%)",
+      "very-grayish-blue": "hsl(210, 46%, 95%)",
     },
     fontFamily: {
-      poppins: '"Poppins", sans-serif',
-      "open-sans": '"Open Sans", sans-serif',
+      manrope: ["Manrope", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
